@@ -19,6 +19,10 @@ import AdminProjects from "./pages/admin/Projects";
 import AdminAchievements from "./pages/admin/Achievements";
 import AdminCertifications from "./pages/admin/Certifications";
 import AdminMessages from "./pages/admin/Messages";
+import AdminSkills from "./pages/admin/Skills";
+import AdminBlog from "./pages/admin/Blog";
+import AdminUsers from "./pages/admin/Users";
+import AdminSettings from "./pages/admin/Settings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -48,6 +52,10 @@ const App = () => (
             <Route path="/admin/achievements" element={<ProtectedRoute><AdminAchievements /></ProtectedRoute>} />
             <Route path="/admin/certifications" element={<ProtectedRoute><AdminCertifications /></ProtectedRoute>} />
             <Route path="/admin/messages" element={<ProtectedRoute><AdminMessages /></ProtectedRoute>} />
+            <Route path="/admin/skills" element={<ProtectedRoute><AdminSkills /></ProtectedRoute>} />
+            <Route path="/admin/blog" element={<ProtectedRoute><AdminBlog /></ProtectedRoute>} />
+            <Route path="/admin/users" element={<ProtectedRoute><AdminUsers /></ProtectedRoute>} />
+            <Route path="/admin/settings" element={<ProtectedRoute><AdminSettings /></ProtectedRoute>} />
             
             <Route path="*" element={<NotFound />} />
           </Routes>
