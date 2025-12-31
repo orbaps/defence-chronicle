@@ -80,7 +80,7 @@ export default function About() {
                 Amarendra <span className="text-primary">Pratap Singh</span>
               </h1>
               <p className="text-xl text-muted-foreground mb-6">
-                Defence Tech & Space Systems Engineer
+                Defence Tech & Space Systems
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 I am an Electronics Engineering (VLSI) student at Rashtriya Raksha University, 

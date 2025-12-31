@@ -47,7 +47,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-md mb-6">
-              Defence Tech & Space Systems Engineer specializing in cybersecurity, 
+              Defence Tech & Space Systems specializing in cybersecurity, 
               VLSI, and AI systems. Currently interning at National Security Guard (NSG) 
               and pursuing B.Tech at Rashtriya Raksha University.
             </p>

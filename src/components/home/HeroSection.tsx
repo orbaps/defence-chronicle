@@ -60,7 +60,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl sm:text-2xl text-muted-foreground mb-6 font-light"
           >
-            Defence Tech & Space Systems Engineer
+            Defence Tech & Space Systems
           </motion.p>
 
           {/* Expertise Tags */}
