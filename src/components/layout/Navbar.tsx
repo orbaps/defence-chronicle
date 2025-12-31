@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Shield, Download } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -44,13 +45,11 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="relative">
-              <Shield className="w-8 h-8 text-primary transition-all duration-300 group-hover:text-primary/80" />
-              <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </div>
-            <span className="font-bold text-lg tracking-tight">
-              <span className="text-primary">A</span>PS
-            </span>
+            <img 
+              src={logo} 
+              alt="Amarendra Pratap Singh Logo" 
+              className="h-10 w-auto transition-all duration-300 group-hover:opacity-80" 
+            />
           </Link>
 
           {/* Desktop Navigation */}
