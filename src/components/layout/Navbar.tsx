@@ -71,7 +71,7 @@ export function Navbar() {
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center gap-3">
             <Button variant="outline" size="sm" className="gap-2" asChild>
-              <a href="/resume.pdf" download>
+              <a href="/resume.html" download="Amarendra_Pratap_Singh_Resume.html">
                 <Download className="w-4 h-4" />
                 Resume
               </a>
@@ -129,7 +129,7 @@ export function Navbar() {
                 ))}
                 <div className="flex flex-col gap-2 mt-4 pt-4 border-t border-border">
                   <Button variant="outline" className="gap-2 w-full" asChild>
-                    <a href="/resume.pdf" download>
+                    <a href="/resume.html" download="Amarendra_Pratap_Singh_Resume.html">
                       <Download className="w-4 h-4" />
                       Download Resume
                     </a>
