@@ -107,7 +107,7 @@ export function HeroSection() {
               </Link>
             </Button>
             <Button size="lg" variant="outline" className="gap-2" asChild>
-              <a href="/resume.pdf" download>
+              <a href="/resume.html" download="Amarendra_Pratap_Singh_Resume.html">
                 <Download className="w-4 h-4" />
                 Download Resume
               </a>
