@@ -51,10 +51,14 @@ export default function About() {
               className="relative order-2 lg:order-1"
             >
               <div className="aspect-square max-w-md mx-auto rounded-2xl border border-border bg-card/50 overflow-hidden relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-secondary/20" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <User className="w-32 h-32 text-muted-foreground/30" />
+                <div className="absolute inset-0">
+                  <img src="/profile.png" alt="Amarendra Pratap Singh" className="w-full h-full object-cover object-center transform transition-transform duration-700 hover:scale-105" />
+                  {/* subtle dark fade to match background */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-transparent mix-blend-multiply pointer-events-none" />
+                  {/* green ambient glow */}
+                  <div className="absolute -inset-4 rounded-2xl bg-gradient-to-r from-primary/20 via-transparent to-secondary/10 blur-3xl opacity-60 animate-float pointer-events-none" />
                 </div>
+
                 {/* Status Badge */}
                 <div className="absolute bottom-4 left-4 right-4">
                   <div className="glass rounded-lg p-4">
