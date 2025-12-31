@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Shield, Rocket, Users, Calendar } from "lucide-react";
+import { Shield, Rocket, Users, Calendar, Award } from "lucide-react";
 import { SectionHeader } from "@/components/ui/section-header";
 
 const experiences = [
@@ -29,6 +29,18 @@ const experiences = [
     description: "Leading technology initiatives and organizing technical events at the university level.",
     icon: Users,
   },
+];
+
+const recognitions = [
+  { id: 1, title: "Runner Up - Product Breakdown", detail: "E Summit 2025, IIT Indore (National Level)" },
+  { id: 2, title: "Winner - AI Treasure Hunt", detail: "RRU (2025)" },
+  { id: 3, title: "Indian Space Labs Internship Selection - AIR 167", detail: "(National)" },
+  { id: 4, title: "National Science Olympiad (NSO)", detail: "2022 - AIR 90" },
+  { id: 5, title: "2nd Position - Essay Writing Competition", detail: "SICISSL (RRU)" },
+  { id: 6, title: "Certificate of Participation - ML Decode Hackathon", detail: "2025" },
+  { id: 7, title: "SOLIDWORKS CAD Design Associate (CSWA)", detail: "Dassault Systèmes (2025)" },
+  { id: 8, title: "Wireless Application Protocol (WAP)", detail: "Europe Academy (2025)" },
+  { id: 9, title: "3D Printing Specialist", detail: "Technical Institution (2025)" },
 ];
 
 export function ExperienceTimeline() {
@@ -90,6 +102,31 @@ export function ExperienceTimeline() {
               </div>
             </motion.div>
           ))}
+
+          {/* Recognition & Certifications */}
+          <div className="mt-12 max-w-3xl mx-auto">
+            <SectionHeader
+              badge="Recognition"
+              title="Recognition & Certifications"
+              description="Awards, selections, and certifications earned over time."
+            />
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+              {recognitions.map((r) => (
+                <div key={r.id} className="card-tactical rounded-lg border border-border bg-card/50 p-4">
+                  <div className="flex items-start gap-3">
+                    <div className="p-2 rounded-lg bg-primary/10 text-primary">
+                      <Award className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <div className="text-sm font-semibold">{r.title}</div>
+                      {r.detail && <div className="text-xs text-muted-foreground mt-1">{r.detail}</div>}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
