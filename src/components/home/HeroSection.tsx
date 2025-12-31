@@ -4,6 +4,8 @@ import { ArrowRight, Download, Cpu, Satellite, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Spline from "@splinetool/react-spline";
 import { Suspense } from "react";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
+
 const stats = [
   { label: "AIR 167", sublabel: "Space Labs" },
   { label: "NSG", sublabel: "Active Intern" },
@@ -21,7 +23,7 @@ export function HeroSection() {
     <section className="relative min-h-[90vh] flex items-center hero-gradient overflow-hidden">
       {/* Background Grid */}
       <div className="absolute inset-0 tactical-grid opacity-40" />
-      
+
       {/* Animated Gradient Orbs */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float" />
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-secondary/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }} />
@@ -91,8 +93,8 @@ export function HeroSection() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-muted-foreground text-lg max-w-2xl mb-8 leading-relaxed"
             >
-              Electronics Engineering (VLSI) student at Rashtriya Raksha University, 
-              an Institute of National Importance under MHA. Building secure systems 
+              Electronics Engineering (VLSI) student at Rashtriya Raksha University,
+              an Institute of National Importance under MHA. Building secure systems
               at the intersection of defence, space, and artificial intelligence.
             </motion.p>
 
@@ -142,14 +144,27 @@ export function HeroSection() {
             transition={{ duration: 1, delay: 0.4 }}
             className="hidden lg:block h-[600px] relative"
           >
-            <Suspense fallback={
+            <ErrorBoundary fallback={
               <div className="w-full h-full flex items-center justify-center">
-                <div className="w-16 h-16 border-4 border-primary/30 border-t-primary rounded-full animate-spin" />
+                <div className="relative w-full h-full flex items-center justify-center bg-primary/5 rounded-2xl border border-primary/10 overflow-hidden">
+                  <div className="absolute inset-0 tactical-grid opacity-20" />
+                  <div className="z-10 text-center">
+                    <Cpu className="w-16 h-16 text-primary/30 mx-auto mb-4" />
+                    <p className="text-sm text-muted-foreground font-mono">SECURE_SYSTEM_VISUALIZATION_OFFLINE</p>
+                  </div>
+                </div>
               </div>
             }>
-              <Spline scene="https://prod.spline.design/Rz7dZBaXLFzNVjno/scene.splinecode" />
-            </Suspense>
+              <Suspense fallback={
+                <div className="w-full h-full flex items-center justify-center">
+                  <div className="w-16 h-16 border-4 border-primary/30 border-t-primary rounded-full animate-spin" />
+                </div>
+              }>
+                <Spline scene="https://prod.spline.design/Rz7dZBaXLFzNVjno/scene.splinecode" />
+              </Suspense>
+            </ErrorBoundary>
           </motion.div>
+
         </div>
       </div>
 
