@@ -44,12 +44,9 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="relative">
-              <Shield className="w-8 h-8 text-primary transition-all duration-300 group-hover:text-primary/80" />
-              <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </div>
+            <img src="/logo.svg" alt="Site logo" className="w-8 h-8" />
             <span className="font-bold text-lg tracking-tight">
-              <span className="text-primary">A</span>PS
+              <span className="text-primary">Amarendra</span> Pratap Singh
             </span>
           </Link>
 

@@ -1,0 +1,13 @@
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="500" fill="black"/>
+  
+  <path d="M250 40L80 110V230C80 340 150 410 250 450C350 410 420 340 420 230V110L250 40Z" stroke="#2E7D32" stroke-width="12" fill="none"/>
+  
+  <path d="M250 65L110 125V230C110 320 170 385 250 420C330 385 390 320 390 230V125L250 65Z" fill="#FFFFFF"/>
+
+  <path d="M250 140C235 140 225 150 225 165V185H275V165C275 150 265 140 250 140Z" fill="black"/> <path d="M210 195H290V250L275 270V320H225V270L210 250V195Z" fill="black"/> <path d="M215 200L180 260H200L210 220" fill="black"/> <path d="M285 200L320 260H300L290 220" fill="black"/> <text x="250" y="360" font-family="Arial, sans-serif" font-weight="900" font-size="32" fill="black" text-anchor="middle" letter-spacing="2">DEFENCE</text>
+  
+  <text x="250" y="395" font-family="Arial, sans-serif" font-weight="900" font-size="28" fill="#2E7D32" text-anchor="middle" letter-spacing="1">CHRONICLE</text>
+  
+  <circle cx="250" cy="230" r="10" stroke="#2E7D32" stroke-width="4" fill="white"/>
+</svg>

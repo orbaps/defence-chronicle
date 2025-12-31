@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="1024" height="1024" role="img" aria-label="Amarendra Pratap Singh torso logo">
+  <defs>
+    <linearGradient id="gt" x1="0" x2="1">
+      <stop offset="0" stop-color="#22c55e" />
+      <stop offset="1" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="10" fill="transparent" />
+  <g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M32 52c0-14 12-26 28-26s28 12 28 26v30c0 6-5 11-11 11H43c-6 0-11-5-11-11V52z"/>
+    <path d="M42 72c7-6 18-8 26-8s19 2 26 8"/>
+    <path d="M56 36c0-2 4-4 8-4s8 2 8 4" stroke-width="2"/>
+  </g>
+  <rect x="44" y="58" width="40" height="24" rx="4" fill="url(#gt)" opacity="0.95" />
+  <path d="M44 58h40" stroke="#bff1cf" stroke-width="1.5" fill="none" />
+</svg>
