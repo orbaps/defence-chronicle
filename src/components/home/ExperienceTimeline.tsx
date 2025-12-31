@@ -41,6 +41,8 @@ const recognitions = [
   { id: 7, title: "SOLIDWORKS CAD Design Associate (CSWA)", detail: "Dassault Systèmes (2025)" },
   { id: 8, title: "Wireless Application Protocol (WAP)", detail: "Europe Academy (2025)" },
   { id: 9, title: "3D Printing Specialist", detail: "Technical Institution (2025)" },
+  { id: 10, title: "Trackshift Finalist", detail: "Finalist" },
+  { id: 11, title: "Avishkar Finalist", detail: "Finalist" },
 ];
 
 export function ExperienceTimeline() {
