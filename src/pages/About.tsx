@@ -15,13 +15,13 @@ const education = [
     degree: "Higher Secondary Education (Class XII)",
     institution: "St. Francis H.S.S., Bilaspur, Chhattisgarh",
     period: "2023",
-    score: "77.4%",
+    score: "77.4",
   },
   {
     degree: "Secondary Education (Class X)",
     institution: "St. Francis H.S.S., Bilaspur, Chhattisgarh",
     period: "2021",
-    score: "92.6%",
+    score: "92.6",
   },
 ];
 
