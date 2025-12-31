@@ -150,9 +150,7 @@ export default function About() {
                     {edu.status && (
                       <span className="block badge-public mt-2">{edu.status}</span>
                     )}
-                    {edu.score && (
-                      <span className="block text-primary font-semibold mt-2">{edu.score}</span>
-                    )}
+
                   </div>
                 </div>
               </motion.div>
