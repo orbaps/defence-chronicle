@@ -151,7 +151,7 @@ export default function Skills() {
                     >
                       <div className="flex items-center justify-between mb-2">
                         <span className="text-sm font-medium">{skill.name}</span>
-                        <span className="text-xs text-muted-foreground">{skill.level}</span>
+                        <span className="text-xs text-muted-foreground">{skill.level}%</span>
                       </div>
                       <div className="skill-bar">
                         <motion.div

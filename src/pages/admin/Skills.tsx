@@ -191,7 +191,7 @@ export default function AdminSkills() {
                   </Select>
                 </div>
                 <div>
-                  <label className="text-sm font-medium">Proficiency Level ({form.level})</label>
+                  <label className="text-sm font-medium">Proficiency Level ({form.level}%)</label>
                   <Input
                     type="range"
                     min={0}
@@ -254,7 +254,7 @@ export default function AdminSkills() {
                             style={{ width: `${skill.level}%` }}
                           />
                         </div>
-                        <span className="text-sm text-muted-foreground">{skill.level}</span>
+                        <span className="text-sm text-muted-foreground">{skill.level}%</span>
                       </div>
                     </TableCell>
                     <TableCell>{skill.display_order}</TableCell>
